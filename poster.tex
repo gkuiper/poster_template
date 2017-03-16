@@ -1,0 +1,99 @@
+\documentclass[final]{beamer}
+\usetheme{Guus}
+\usepackage[orientation=portrait,size=a0,scale=1.6,debug]{beamerposter}
+
+\definecolor{i6colorscheme1}{HTML}{FF6518}
+\definecolor{i6colorschemeHeadline}{HTML}{0033cc}
+
+% \graphicspath{{img/}, {src/}}
+
+\usepackage{zref-savepos}
+\usepackage{subcaption}
+\usepackage{listings}
+
+\usepackage{lipsum}
+\usepackage{units}
+
+\usepackage[mode=build, obeyclassoptions=true]{standalone}
+\graphicspath{{img/standalone}{img/}}
+
+% \beamertemplategridbackground[1em]
+
+\footer{
+\begin{columns}
+\begin{column}[c]{0.33\textwidth}
+\centering
+\includegraphics[height=5cm]{stw-cps}
+\end{column}
+\begin{column}[c]{0.33\textwidth}
+\centering
+\includegraphics[height=5cm]{UT_Logo_Black_EN}
+\end{column}
+\begin{column}[c]{0.33\textwidth}
+\centering
+\includegraphics[height=3cm]{nxp}
+\end{column}
+\end{columns}
+}
+
+\photo{
+\centering
+\includegraphics[width=0.9\textwidth]{guuskuiper2}
+}
+
+\author{\textbf{Guus Kuiper}\inst{1}}
+\institute[University of Twente]
+{
+  \inst{1}%
+  University of Twente
+}
+
+\title{The title of my poster}
+\date{\today} 
+
+\usebackgroundtemplate%
+{%`trim=left bottom right top` 
+    \includegraphics[height=\paperheight,trim=38cm -2cm 0 0]{self_driving_car.jpg}%
+}
+
+\begin{document}
+\begin{frame}{} 
+
+% \tcbstartdraftmode
+\begin{tcbitemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COLUMN 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tcbitem[blankest,space to=\myspace]
+\begin{tcbitemize}[raster columns=1]
+\tcbitem[title=One] \lipsum[1]
+\tcbitem[title=Two] \lipsum[2]
+\tcbitem[title=Three, add to natural height=\myspace] \lipsum[3]
+\end{tcbitemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COLUMN 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tcbitem[blankest,space to=\myspace]
+\begin{tcbitemize}[raster columns=1]
+\tcbitem[title=Four] \lipsum[4]
+\tcbitem[title=Five, add to natural height=\myspace] \lipsum[5]
+\tcbitem[title=Six] \lipsum[6]
+\end{tcbitemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% COLUMN 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tcbitem[blankest,space to=\myspace]
+\begin{tcbitemize}[raster columns=1]
+\tcbitem[title=Seven] \lipsum[7]
+\tcbitem[blankest, add to natural height=\myspace]
+\tcbitem[title=Eight] \lipsum[8]
+\tcbitem[title=Nine] \lipsum[9]
+\end{tcbitemize}
+\end{tcbitemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% END COLUMNS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill
+\end{frame}
+\end{document}
