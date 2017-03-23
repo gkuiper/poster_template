@@ -27,19 +27,19 @@
 \setbeamercolor{title in headline}{fg=white}
 \setbeamercolor{author in headline}{fg=lightgray}
 \setbeamercolor{institute in headline}{fg=lightgray}
-\setbeamercolor{logo in headline}{fg=black,bg=lightgray}
-\setbeamercolor{separation line}{bg=i6colorscheme1}
-\setbeamercolor{footline}{fg=white,bg=i6colorschemeHeadline!50}
-\setbeamercolor*{normal text}{fg=black,bg=i6colorscheme3}% body colors and fonts
-\setbeamercolor*{block body}{bg=white,fg=black}% block environment
-\setbeamercolor*{block title}{fg=white,bg=i6colorblockbg}
-\setbeamercolor*{example title}{fg=white,bg=i6colorscheme1}
+% \setbeamercolor{logo in headline}{fg=black,bg=lightgray}
+% \setbeamercolor{separation line}{bg=i6colorscheme1}
+% \setbeamercolor{footline}{fg=white,bg=i6colorschemeHeadline!50}
+% \setbeamercolor*{normal text}{fg=black,bg=i6colorscheme3}% body colors and fonts
+% \setbeamercolor*{block body}{bg=white,fg=black}% block environment
+% \setbeamercolor*{block title}{fg=white,bg=i6colorblockbg}
+% \setbeamercolor*{example title}{fg=white,bg=i6colorscheme1}
 \setbeamercolor{alerted text}{fg=i6colorscheme1}
 \setbeamercolor*{background canvas}{bg=i6colorscheme3}% background color
 
-\setbeamerfont{footline}{size=\normalsize}
-\setbeamerfont{block title}{size=\large,series=\bf}
-\setbeamerfont{example title}{size=\large,series=\bf}
+% \setbeamerfont{footline}{size=\normalsize}
+% \setbeamerfont{block title}{size=\large,series=\bf}
+% \setbeamerfont{example title}{size=\large,series=\bf}
 
 \setbeamertemplate{itemize items}[ball]
 \setbeamertemplate{navigation symbols}{}  % no navigation on a poster
@@ -70,7 +70,7 @@ raster every box/.style={coltitle=white, colframe=i6colorblockbg, fonttitle=\bf,
         \centering
         \usebeamercolor{title in headline}{\color{fg}\textbf{\LARGE{\inserttitle}}\\[1ex]}
         \usebeamercolor{author in headline}{\color{fg}\large{\insertauthor}\\[0.5ex]}
-        \usebeamercolor{author in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
+        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
 		\vskip1cm
 	\end{column}
 	\end{columns}
